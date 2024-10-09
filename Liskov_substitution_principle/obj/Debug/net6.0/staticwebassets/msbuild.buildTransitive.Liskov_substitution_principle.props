@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Liskov_substitution_principle.props" />
+</Project>

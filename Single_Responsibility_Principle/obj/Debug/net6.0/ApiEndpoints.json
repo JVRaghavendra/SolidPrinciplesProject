@@ -1,0 +1,97 @@
+[
+  {
+    "ContainingType": "Single_Responsibility_Principle.Controllers.DontUseLikeThisController",
+    "Method": "SendEmailToCustomers",
+    "RelativePath": "api/DontUseLikeThis/SendEmailToCustomers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mailRequest",
+        "Type": "Single_Responsibility_Principle.MailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Single_Responsibility_Principle.Controllers.DontUseLikeThisController",
+    "Method": "SendSMSToCustomer",
+    "RelativePath": "api/DontUseLikeThis/SendSMSToCustomers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "to",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "message",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Single_Responsibility_Principle.Controllers.EmailCommunicationController",
+    "Method": "SendEmailToCustomers",
+    "RelativePath": "api/EmailCommunication/SendEmailToCustomers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mailRequest",
+        "Type": "Single_Responsibility_Principle.MailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Single_Responsibility_Principle.Controllers.SmsCommunicationController",
+    "Method": "SendSMSToCustomer",
+    "RelativePath": "api/SmsCommunication/SendSMSToCustomers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "to",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "message",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Single_Responsibility_Principle.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Single_Responsibility_Principle.WeatherForecast, Single_Responsibility_Principle, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
